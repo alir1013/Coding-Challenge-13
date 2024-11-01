@@ -12,8 +12,8 @@ fetch('https://www.course-api.com/javascript-store-products')
     .then(products => {
         displayProducts(products);
     })
-    .catch(error => {
-        console.error("could not fetch data", error); 
+    .catch(error => {    //Task 4: Handle Errors Gracefully
+        console.error("Failed to load products. Please try again later", error); 
     });
 
 //Task 3: Display Product Details Dynamically
